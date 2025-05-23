@@ -7,7 +7,7 @@ from database import get_db
 from database.models import MovieModel
 from schemas.movies import MovieDetailResponseSchema, MovieListResponseSchema
 
-router = APIRouter()
+movie_router = APIRouter()
 
 
 @router.get("/movies/", response_model=MovieListResponseSchema)
